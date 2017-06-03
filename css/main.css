@@ -75,9 +75,34 @@ nav p, footer p {
   color: #ffffff;
   padding: 15px;
 }
-
-.films-header {
+.main-container-calendar {
+  background-color: #0B1942;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.main-header {
   font-size: 2em;
+}
+
+.calendar-container {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+.calendar-day {
+  background-color: #ffffff;
+  margin: 2px;
+  flex: 0 1 calc(100% / 7 - 4px);
+  height: 4em;
+}
+.highlighted {
+  background-color: #F5005B;
+}
+.calendar-date {
+  margin: 0;
+  padding: 4px 6px 4px 2px;
+  background-color: #0B1942;
+  display: inline-block;
 }
 
 footer {
