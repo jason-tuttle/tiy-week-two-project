@@ -1,20 +1,95 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
-/* COLOR STYLES
-text: #0B1942
-inline link: #00B7D3
-h2 background: #0B1942
-h2 color: #FFFFFF
-logo background: #F5005B
-navigation background: #7DDFE8
-navigation link color: #FFFFFF
-"Home" nav link background: #00A5BF
-"Calendar" nav link background: #00B7D3
-"Join" nav link background: #00D5E7
-"Up Next" background: #0B1942
-"Up Next" card background #E2E2E2
-calendar background and treatments: #0B1942
-calendar highlighted day: #F5005B
-button background: #F5005B
-copyright text: #FFFFFF
+/*
+  --------  DEFAULT (MOBILE) STYLES --------
 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #0b1942;
+  font-family: "PT Sans", sans-serif;
+}
+h1 {
+  font-weight: lighter;
+}
+h2 {
+  color: #ffffff;
+  background-color: #0b1942;
+}
+
+header {
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 150px;
+}
+.logo {
+  background-color: #F5005B;
+  padding: 10px;
+  flex: 0 0 30%;
+  text-align: center;
+}
+header img {
+  width: auto;
+  height: 130px;
+}
+header a, footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav {
+  flex: 1 0 auto;
+  background-color: #7DDFE8;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+nav p, footer p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+.nav-home {
+  background-color: #00A5BF;
+  flex: 1 0 auto;
+}
+
+.nav-calendar {
+  background-color: #00B7D3;
+  flex: 1 0 auto;
+}
+
+.nav-join {
+  background-color: #00D5E7;
+  flex: 1 0 auto;
+}
+
+.main-p {
+  padding: 0 20px;
+}
+
+.main-container {
+  background-color: #0B1942;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.films-header {
+  font-size: 2em;
+}
+
+footer {
+  height: 200px;
+  background-color: #7DDFE8;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.foot-text {
+  background-color: transparent;
+  flex: 1 0 auto;
+  color: #ffffff;
+}
