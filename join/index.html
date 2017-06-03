@@ -3,37 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Film Club - Join</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    Join Film Club
+    <header id="top">
+      <div class="logo">
+        <img src="../images/filmclub.png" alt="Film Club logo">
+      </div>
+      <nav>
+        <div class="nav-home">
+          <a href="../index.html"><p>Home</p></a>
+        </div>
+        <div class="nav-calendar">
+          <a href="../calendar/index.html"><p>Calendar</p></a>
+        </div>
+        <div class="nav-join">
+          <a href="#top"><p>Join</p></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Join Film Club</h1>
+      <form class="join-form" action="index.html" method="post">
+        <div class="form-personal">
+          <label for="profile-pic">profile picture</label><br>
+          <input type="file" id="profile-pic" name="profile-pic" value="Choose File">
+          <div class="profile-pic-box">
+            </div>
+          <label for="name">name</label><br>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="email">email address</label><br>
+          <input type="email" id="email" name="email" value=""><br>
+          <label for="password">password</label><br>
+          <input type="password" id="password" name="password" value=""><br>
+          <label for="password-confirm">confirm password</label><br>
+          <input type="password" id="password-confirm" name="password" value="">
+        </div>
+        <div class="form-interests">
+          <label for="">Which genres are you interested in?</label>
+          <p><input type="checkbox" id="action" name="interests" value="action">
+          <label for="action">action</label></p>
+          <p><input type="checkbox" id="adventure" name="interests" value="adventure">
+          <label for="adventure">adventure</label></p>
+          <p><input type="checkbox" id="comedy" name="interests" value="comedy">
+          <label for="comedy">comedy</label></p>
+          <p><input type="checkbox" id="drama" name="interests" value="drama">
+          <label for="drama">drama</label></p>
+          <p><input type="checkbox" id="fantasy" name="interests" value="fantasy">
+          <label for="fantasy">fantasy</label></p>
+          <p><input type="checkbox" id="historical" name="interests" value="historical">
+          <label for="historical">historical</label></p>
+          <p><input type="checkbox" id="horror" name="interests" value="horror">
+          <label for="horror">horror</label></p>
+          <p><input type="checkbox" id="mystery" name="interests" value="mystery">
+          <label for="mystery">mystery</label></p>
+          <p><input type="checkbox" id="romance" name="interests" value="romance">
+          <label for="romance">romance</label></p>
+          <p><input type="checkbox" id="science fiction" name="interests" value="science fiction">
+          <label for="science fiction">science fiction</label></p>
+          <p><input type="checkbox" id="western" name="interests" value="western">
+          <label for="western">western</label></p>
+        </div>
+        <div class="form-additional">
+          <label for="form-info">Additional input</label><br>
+          <textarea name="input" rows="10" value=""></textarea>
+        </div>
+        <div class="form-submit">
+          <input type="submit" name="submit" value="Join Film Club">
+        </div>
 
-    profile picture
-    Choose File
+      </form>
+    </main>
 
-    name
+    <footer>
 
-    email address
-
-    password
-
-    confirm password
-
-    Which genres are you interested in?
-    action
-    adventure
-    comedy
-    drama
-    fantasy
-    historical
-    horror
-    mystery
-    romance
-    science fiction
-    western
-
-    Additional input
-
-    Join Film Club
-
+      <div class="nav-home">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="nav-calendar">
+        <a href="../calendar/index.html">Calendar</a>
+      </div>
+      <div class="nav-join">
+        <a href="#top">Join</a>
+      </div>
+      <span class="foot-text">&copy; 2017, Film Club</span>
+    </footer>
   </body>
 </html>

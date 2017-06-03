@@ -1,20 +1,155 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
-/* COLOR STYLES
-text: #0B1942
-inline link: #00B7D3
-h2 background: #0B1942
-h2 color: #FFFFFF
-logo background: #F5005B
-navigation background: #7DDFE8
-navigation link color: #FFFFFF
-"Home" nav link background: #00A5BF
-"Calendar" nav link background: #00B7D3
-"Join" nav link background: #00D5E7
-"Up Next" background: #0B1942
-"Up Next" card background #E2E2E2
-calendar background and treatments: #0B1942
-calendar highlighted day: #F5005B
-button background: #F5005B
-copyright text: #FFFFFF
+/*
+  --------  DEFAULT (MOBILE) STYLES --------
 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #0b1942;
+  font-family: "PT Sans", sans-serif;
+}
+h1 {
+  padding-left: 20px;
+  font-weight: lighter;
+}
+h2 {
+  color: #ffffff;
+  background-color: #0b1942;
+}
+
+header {
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 150px;
+}
+.logo {
+  background-color: #F5005B;
+  padding: 10px;
+  flex: 0 0 30%;
+  text-align: center;
+}
+header img {
+  width: auto;
+  height: 130px;
+}
+header a, footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav {
+  flex: 1 0 auto;
+  background-color: #7DDFE8;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+nav p, footer p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+.nav-home {
+  background-color: #00A5BF;
+  flex: 1 0 auto;
+}
+
+.nav-calendar {
+  background-color: #00B7D3;
+  flex: 1 0 auto;
+}
+
+.nav-join {
+  background-color: #00D5E7;
+  flex: 1 0 auto;
+}
+
+.main-p {
+  padding: 0 20px;
+}
+
+.main-container {
+  background-color: #0B1942;
+  color: #ffffff;
+  padding: 15px;
+}
+.main-container-calendar {
+  background-color: #0B1942;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.main-header {
+  padding-left: 20px;
+  font-size: 2em;
+}
+
+.calendar-container {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+.calendar-day {
+  background-color: #ffffff;
+  margin: 2px;
+  flex: 0 1 calc(100% / 7 - 4px);
+  height: 4em;
+}
+.highlighted {
+  background-color: #F5005B;
+}
+.calendar-date {
+  margin: 0;
+  padding: 4px 6px 4px 2px;
+  background-color: #0B1942;
+  display: inline-block;
+}
+form {
+  padding: 20px;
+}
+form div {
+  margin: 20px 0;
+}
+input[type="file"] {
+  font-size: 0.8em;
+}
+.profile-pic-box {
+  width: 100%;
+  height: calc(100vw - 40px);
+  border-radius: 50%;
+  background: url(../images/profile-placeholder.png) no-repeat bottom center/contain;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  line-height: 2rem;
+  width:100%;
+}
+textarea {
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+input[type="submit"] {
+  background-color: #F5005B;
+  border: none;
+  padding: 25px;
+  font-size: 1em;
+  color: #ffffff;
+}
+footer {
+  height: 200px;
+  background-color: #7DDFE8;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.foot-text {
+  background-color: transparent;
+  flex: 1 0 auto;
+  color: #ffffff;
+}
