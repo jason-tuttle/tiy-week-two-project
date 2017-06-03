@@ -106,7 +106,40 @@ nav p, footer p {
   background-color: #0B1942;
   display: inline-block;
 }
-
+form {
+  padding: 20px;
+}
+form div {
+  margin: 20px 0;
+}
+input[type="file"] {
+  font-size: 0.8em;
+}
+.profile-pic-box {
+  width: 100%;
+  height: calc(100vw - 40px);
+  border-radius: 50%;
+  background: url(../images/profile-placeholder.png) no-repeat bottom center/contain;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  line-height: 2rem;
+  width:100%;
+}
+textarea {
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+input[type="submit"] {
+  background-color: #F5005B;
+  border: none;
+  padding: 25px;
+  font-size: 1em;
+  color: #ffffff;
+}
 footer {
   height: 200px;
   background-color: #7DDFE8;

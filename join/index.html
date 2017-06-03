@@ -27,16 +27,17 @@
       <h1>Join Film Club</h1>
       <form class="join-form" action="index.html" method="post">
         <div class="form-personal">
-          <label for="profile-pic">profile picture</label>
+          <label for="profile-pic">profile picture</label><br>
           <input type="file" id="profile-pic" name="profile-pic" value="Choose File">
-          <img src="../images/profile-placeholder.png" alt="profile picture">
-          <label for="name">name</label>
-          <input type="text" id="name" name="name" value="">
-          <label for="email">email address</label>
-          <input type="email" id="email" name="email" value="">
-          <label for="password">password</label>
-          <input type="password" id="password" name="password" value="">
-          <label for="password">confirm password</label>
+          <div class="profile-pic-box">
+            </div>
+          <label for="name">name</label><br>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="email">email address</label><br>
+          <input type="email" id="email" name="email" value=""><br>
+          <label for="password">password</label><br>
+          <input type="password" id="password" name="password" value=""><br>
+          <label for="password-confirm">confirm password</label><br>
           <input type="password" id="password-confirm" name="password" value="">
         </div>
         <div class="form-interests">
@@ -65,8 +66,8 @@
           <label for="western">western</label></p>
         </div>
         <div class="form-additional">
-          <label for="form-info">Additional input</label>
-          <input type="textarea" name="input" value="">
+          <label for="form-info">Additional input</label><br>
+          <textarea name="input" rows="10" value=""></textarea>
         </div>
         <div class="form-submit">
           <input type="submit" name="submit" value="Join Film Club">
