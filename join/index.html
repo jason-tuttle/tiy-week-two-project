@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Film Club - Join</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header id="top">
@@ -22,37 +24,57 @@
       </nav>
     </header>
     <main>
+      <h1>Join Film Club</h1>
+      <form class="join-form" action="index.html" method="post">
+        <div class="form-personal">
+          <label for="profile-pic">profile picture</label>
+          <input type="file" id="profile-pic" name="profile-pic" value="Choose File">
+          <img src="../images/profile-placeholder.png" alt="profile picture">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" value="">
+          <label for="email">email address</label>
+          <input type="email" id="email" name="email" value="">
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" value="">
+          <label for="password">confirm password</label>
+          <input type="password" id="password-confirm" name="password" value="">
+        </div>
+        <div class="form-interests">
+          <label for="">Which genres are you interested in?</label>
+          <p><input type="checkbox" id="action" name="interests" value="action">
+          <label for="action">action</label></p>
+          <p><input type="checkbox" id="adventure" name="interests" value="adventure">
+          <label for="adventure">adventure</label></p>
+          <p><input type="checkbox" id="comedy" name="interests" value="comedy">
+          <label for="comedy">comedy</label></p>
+          <p><input type="checkbox" id="drama" name="interests" value="drama">
+          <label for="drama">drama</label></p>
+          <p><input type="checkbox" id="fantasy" name="interests" value="fantasy">
+          <label for="fantasy">fantasy</label></p>
+          <p><input type="checkbox" id="historical" name="interests" value="historical">
+          <label for="historical">historical</label></p>
+          <p><input type="checkbox" id="horror" name="interests" value="horror">
+          <label for="horror">horror</label></p>
+          <p><input type="checkbox" id="mystery" name="interests" value="mystery">
+          <label for="mystery">mystery</label></p>
+          <p><input type="checkbox" id="romance" name="interests" value="romance">
+          <label for="romance">romance</label></p>
+          <p><input type="checkbox" id="science fiction" name="interests" value="science fiction">
+          <label for="science fiction">science fiction</label></p>
+          <p><input type="checkbox" id="western" name="interests" value="western">
+          <label for="western">western</label></p>
+        </div>
+        <div class="form-additional">
+          <label for="form-info">Additional input</label>
+          <input type="textarea" name="input" value="">
+        </div>
+        <div class="form-submit">
+          <input type="submit" name="submit" value="Join Film Club">
+        </div>
 
+      </form>
     </main>
-    Join Film Club
 
-    profile picture
-    Choose File
-
-    name
-
-    email address
-
-    password
-
-    confirm password
-
-    Which genres are you interested in?
-    action
-    adventure
-    comedy
-    drama
-    fantasy
-    historical
-    horror
-    mystery
-    romance
-    science fiction
-    western
-
-    Additional input
-
-    Join Film Club
     <footer>
 
       <div class="nav-home">
