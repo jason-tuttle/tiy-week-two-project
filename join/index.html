@@ -27,18 +27,26 @@
       <h1>Join Film Club</h1>
       <form class="join-form" action="index.html" method="post">
         <div class="form-personal">
-          <label for="profile-pic">profile picture</label><br>
-          <input type="file" id="profile-pic" name="profile-pic" value="Choose File">
-          <div class="profile-pic-box">
-            </div>
-          <label for="name">name</label><br>
-          <input type="text" id="name" name="name" value=""><br>
-          <label for="email">email address</label><br>
-          <input type="email" id="email" name="email" value=""><br>
-          <label for="password">password</label><br>
-          <input type="password" id="password" name="password" value=""><br>
-          <label for="password-confirm">confirm password</label><br>
-          <input type="password" id="password-confirm" name="password" value="">
+          <div class="profile-pic">
+            <label for="profile-pic">profile picture</label><br>
+            <input type="file" id="profile-pic" name="profile-pic" value="Choose File">
+            <div class="profile-pic-box">
+              </div>
+          </div>
+          <div class="profile-info">
+            <p>
+              <label for="name">name</label><br>
+              <input type="text" id="name" name="name" value=""><br>
+              <label for="email">email address</label><br>
+              <input type="email" id="email" name="email" value="">
+            </p>
+            <p>
+              <label for="password">password</label><br>
+              <input type="password" id="password" name="password" value=""><br>
+              <label for="password-confirm">confirm password</label><br>
+              <input type="password" id="password-confirm" name="password" value="">
+            </p>
+          </div>
         </div>
         <div class="form-interests">
           <label for="">Which genres are you interested in?</label>
@@ -77,17 +85,20 @@
     </main>
 
     <footer>
-
-      <div class="nav-home">
-        <p><a href="../index.html">Home</a></p>
-      </div>
-      <div class="nav-calendar">
-        <p><a href="../calendar/index.html">Calendar</a></p>
-      </div>
-      <div class="nav-join">
-        <p><a href="#top">Join</a></p>
-      </div>
-      <p><span class="foot-text">&copy; 2017, Film Club</span></p>
+      <nav>
+        <div class="nav-home">
+          <a href="../index.html"><p>Home</p></a>
+        </div>
+        <div class="nav-calendar">
+          <a href="../calendar/index.html"><p>Calendar</p></a>
+        </div>
+        <div class="nav-join">
+          <a href="#top"><p>Join</p></a>
+        </div>
+        <div class="foot-text">
+          <p>&copy; 2017, Film Club</p>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>

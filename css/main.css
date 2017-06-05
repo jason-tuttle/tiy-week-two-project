@@ -47,6 +47,10 @@ nav {
   display: flex;
   flex-flow: column nowrap;
 }
+
+nav div {
+  flex: 1 0 auto;
+}
 nav p, footer p {
   padding: 15px 0;
   margin: 0;
@@ -54,17 +58,14 @@ nav p, footer p {
 
 .nav-home {
   background-color: #00A5BF;
-  flex: 1 0 auto;
 }
 
 .nav-calendar {
   background-color: #00B7D3;
-  flex: 1 0 auto;
 }
 
 .nav-join {
   background-color: #00D5E7;
-  flex: 1 0 auto;
 }
 
 .main-p {
@@ -146,6 +147,7 @@ nav p, footer p {
 }
 .highlighted {
   background-color: #F5005B;
+  cursor: pointer;
 }
 .calendar-date {
   margin: 0;
@@ -187,16 +189,102 @@ input[type="submit"] {
   font-size: 1em;
   color: #ffffff;
 }
-footer {
-  height: 200px;
-  background-color: #7DDFE8;
-  text-align: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-}
+
 .foot-text {
   background-color: transparent;
   flex: 1 0 auto;
   color: #ffffff;
 }
+
+@media (min-width: 454px) and (max-width: 768px) {
+  .logo {
+    background-color: #F5005B;
+    padding: 10px;
+    flex: 0 1 auto;
+    text-align: center;
+    align-self: auto;
+  }
+  nav {
+    flex: 1 0 75%;
+    background-color: #7DDFE8;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    /*justify-content: flex-start;*/
+    align-content: flex-start;
+  }
+  nav div {
+    flex: 0 1 20%;
+    /*align-self: flex-start;*/
+  }
+  nav p, footer p {
+    padding: 65px 0;
+  }
+
+  footer {
+    /*height: 200px;*/
+    background-color: #7DDFE8;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+  }
+  footer div {
+    flex: 0 1 20%;
+  }
+  .foot-text {
+    background-color: transparent;
+    flex: 1 0 auto;
+    color: #ffffff;
+  }
+  .film-small {
+    flex: 0 1 22%;
+    padding: 10px;
+    color: #0B1942;
+  }
+  .film-small > img {
+    width: calc(100% - 20px);
+  }
+  .calendar-day {
+    height: 6em;
+  }
+
+  .join-form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .form-personal {
+    display: flex;
+  }
+  .profile-pic {
+    flex: 1 1 50%;
+  }
+  .profile-pic-box {
+    width: calc(50vw - 40px);
+    height: calc(50vw - 40px);
+    margin: 0;
+    background: url(../images/profile-placeholder.png) no-repeat bottom center/cover;
+  }
+  .profile-info {
+    flex: 1 1 50%;
+    line-height: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .form-interests {
+    line-height: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    /*height: 50vw;*/
+  }
+  .form-interests p {
+    flex: 0 1 50%;
+  }
+  .form-interests > label {
+    flex: 1 0 100%;
+  }
+
+
+} /* END OF TABLET MEDIA QUERY */
