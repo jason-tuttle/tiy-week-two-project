@@ -4,6 +4,7 @@
   --------  DEFAULT (MOBILE) STYLES --------
 */
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
   color: #0b1942;
@@ -375,6 +376,9 @@ input[type="submit"] {
   .calendar-day {
     height: 8em;
   }
+  .join-form {
+    width: 100%;
+  }
   .form-personal {
     display: flex;
   }
@@ -393,5 +397,25 @@ input[type="submit"] {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+  }
+  .profile-info p {
+    padding: 0 10px;
+    flex: 1 1 auto;
+  }
+  .form-interests {
+    line-height: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    /*height: 50vw;*/
+  }
+  .form-interests p {
+    flex: 0 1 33%;
+  }
+  .form-interests > label {
+    flex: 1 0 100%;
+  }
+  textarea {
+    width: 70%;
+    border: 1px solid lightgrey;
   }
 }
