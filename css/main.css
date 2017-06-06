@@ -127,7 +127,7 @@ nav p, footer p {
   flex-flow: row wrap;
 }
 .film-small {
-  flex: 0 1 44%;
+  flex: 1 1 40%;
   padding: 10px;
   color: #0B1942;
 }
@@ -225,23 +225,22 @@ input[type="submit"] {
   }
 
   footer {
-    /*height: 200px;*/
     background-color: #7DDFE8;
     text-align: center;
-    display: flex;
+    /*display: flex;
     flex-flow: row nowrap;
-    align-content: flex-start;
+    align-content: flex-start;*/
   }
-  footer div {
+  /*footer div {
     flex: 0 1 20%;
-  }
+  }*/
   .foot-text {
     background-color: transparent;
     flex: 1 0 auto;
     color: #ffffff;
   }
   .film-small {
-    flex: 0 1 22%;
+    flex: 1 1 20%;
     padding: 10px;
     color: #0B1942;
   }
@@ -280,7 +279,6 @@ input[type="submit"] {
     line-height: 1rem;
     display: flex;
     flex-flow: row wrap;
-    /*height: 50vw;*/
   }
   .form-interests p {
     flex: 0 1 50%;
@@ -305,28 +303,20 @@ input[type="submit"] {
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    /*justify-content: flex-start;*/
     align-content: flex-start;
   }
   nav div {
     flex: 0 1 120px;
-    /*align-self: flex-start;*/
   }
   nav p, footer p {
     padding: 65px 0;
   }
 
   footer {
-    /*height: 200px;*/
     background-color: #7DDFE8;
     text-align: center;
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: flex-start;
   }
-  footer div {
-    flex: 0 1 20%;
-  }
+
   .foot-text {
     text-align: right;
     padding-right: 20px;
@@ -368,7 +358,7 @@ input[type="submit"] {
     flex-flow: row wrap;
   }
   .film-small {
-    flex: 0 1 45%;
+    flex: 1 1 40%;
     padding: 10px;
     color: #0B1942;
   }
